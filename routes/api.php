@@ -1,0 +1,20 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\ProductApiController;
+use App\Http\Controllers\Api\CategoryApiController;
+
+
+
+Route::middleware('auth:sanctum')->group(function () {
+    Route::get('/products', [ProductApiController::class, 'index']);
+    Route::get('/products/{id}', [ProductApiController::class, 'show']);
+    Route::post('/products', [ProductApiController::class, 'store']);
+    Route::put('/products/{id}', [ProductApiController::class, 'update']);
+    Route::delete('/products/{id}', [ProductApiController::class, 'destroy']);
+
+    Route::get('/categories', [CategoryApiController::class, 'index']);
+});
+
+
+
