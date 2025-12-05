@@ -1,6 +1,6 @@
 Inventory Management
 
-SimpleInventory is a lightweight inventory management system built using **Laravel**.  
+Inventory management system built using Laravel.  
 It helps to manage products,manage categories , and perform CRUD (Create, Read, Update, Delete) operations with a user-friendly interface.
 
 ---
@@ -12,8 +12,6 @@ It helps to manage products,manage categories , and perform CRUD (Create, Read, 
 - Track product quantity and status
 - View product details
 - Search and filter products
-- REST API endpoints for external integrations
-- Responsive and simple UI
 
 ---
 
